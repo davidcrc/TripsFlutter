@@ -20,7 +20,36 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      //home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("HOLA MUDO"),
+        ),
+        /*body: Center(
+          child: Text("HOLUuu"),
+        ),*/
+        body: Container(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage("assets/images/img.jpg"),
+              fit: BoxFit.cover,
+            ),
+          ),
+          child: Center(
+            child: Container(
+              color: Colors.black.withOpacity(0.5),
+              height: 100,
+              child: Text("Hola mudo", style: TextStyle(
+                fontSize: 30,
+                letterSpacing: 22,
+                color: Colors.white,
+                fontWeight: FontWeight.bold
+              ),),
+            )
+          ),
+        ),
+
+      )
     );
   }
 }
