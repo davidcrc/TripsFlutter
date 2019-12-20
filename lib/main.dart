@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:platzi_flutter_app/description_place.dart';
+import 'package:platzi_flutter_app/review_list.dart';
 
 void main() => runApp(MyApp());
 
@@ -31,7 +32,10 @@ class MyApp extends StatelessWidget {
         ),
 
         // TODO: Para traer el widget creado
-        body: new DescriptionPlace("Duwili Ella", 3 ,desciptionDummy),
+        // body: new DescriptionPlace("Duwili Ella", 3 ,desciptionDummy),
+
+        // NOTE:
+        body: ReviewList(),
         /*body: Center(
           child: Text("HOLUuu"),
         ),
