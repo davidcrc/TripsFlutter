@@ -12,7 +12,7 @@ class ButtonPurple extends StatelessWidget{
 
     // NOTE: Un bug hace que el area cliqueable sea mas grande
     return Container(
-      
+
       margin: EdgeInsets.only(
         top: 30.0,
         left: 20.0,
