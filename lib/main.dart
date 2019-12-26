@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:platzi_flutter_app/description_place.dart';
 import 'package:platzi_flutter_app/review_list.dart';
 import 'package:platzi_flutter_app/gradient_back.dart';
+import 'header_appbar.dart';
 
 void main() => runApp(MyApp());
 
@@ -48,7 +49,8 @@ class MyApp extends StatelessWidget {
               ],
             ),
             //
-            GradientBack("Popular"),
+            //GradientBack("Popular"),
+            HeaderAppBar(),     // NOTE: Por que pone  aqui el appbar??
           ],
         ),
         /*body: Center(

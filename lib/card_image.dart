@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 
 
-class CradImage extends StatelessWidget
+class CardImage extends StatelessWidget
 {
 
   String pathImage = "asset/images/playa1.jpg";
+
+  CardImage(this.pathImage);
 
   @override
   Widget build(BuildContext context) {
