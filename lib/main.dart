@@ -4,6 +4,10 @@ import 'package:platzi_flutter_app/review_list.dart';
 import 'package:platzi_flutter_app/gradient_back.dart';
 import 'header_appbar.dart';
 
+// Para el reto 3
+import 'item_designer.dart';
+import 'item_list.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -28,6 +32,9 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       //home: MyHomePage(title: 'Flutter Demo Home Page'),
+
+      // Note: Antes del reto 3
+      /*
       home: Scaffold(
         /* Lo quitamos porq se hara uno personalizado
         appBar: AppBar(
@@ -80,6 +87,24 @@ class MyApp extends StatelessWidget {
         ),
       */
       )
+      */
+
+      /// RETO 3 - home
+
+      home: Scaffold(
+        appBar: AppBar(
+          leading: Icon(Icons.menu),
+          title: Text("DESIGNERS" ),
+          centerTitle: true,
+        ),
+
+        body: Stack(
+          children: <Widget>[
+            ItemDesignerList(),
+            //AppBarForm(),
+          ],
+        ),
+      ),
     );
   }
 }

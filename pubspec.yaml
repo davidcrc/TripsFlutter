@@ -51,6 +51,13 @@ flutter:
     - assets/images/playa2.jpg
     - assets/images/playa3.jpg
     - assets/images/playa4.jpg
+    - assets/images/avatar.jpg
+    - assets/images/perfil1.jpg
+    - assets/images/perfil2.jpg
+    - assets/images/perfil3.jpg
+    - assets/images/perfil4.jpg
+    - assets/images/perfil5.jpg
+    - assets/images/perfil6.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
