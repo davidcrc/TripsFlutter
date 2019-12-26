@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
       //home: MyHomePage(title: 'Flutter Demo Home Page'),
 
       // Note: Antes del reto 3
-      /*
+      
       home: Scaffold(
         /* Lo quitamos porq se hara uno personalizado
         appBar: AppBar(
@@ -87,10 +87,10 @@ class MyApp extends StatelessWidget {
         ),
       */
       )
-      */
+
 
       /// RETO 3 - home
-
+      /*
       home: Scaffold(
         appBar: AppBar(
           leading: Icon(Icons.menu),
@@ -105,6 +105,8 @@ class MyApp extends StatelessWidget {
           ],
         ),
       ),
+      */
+
     );
   }
 }

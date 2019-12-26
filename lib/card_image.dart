@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 
+import 'floating_action_button_green.dart';
 
 class CardImage extends StatelessWidget
 {
 
   String pathImage = "asset/images/playa1.jpg";
+  String id_card = "abc";
 
   CardImage(this.pathImage);
 
@@ -39,7 +41,15 @@ class CardImage extends StatelessWidget
       ),
     );
 
-    return card;
+    return Stack(
+      // Aqui se alinea el boton con la iamgen
+      alignment: Alignment(0.9, 1.1),
+
+      children: <Widget>[
+        card,
+        FloatingActionButtonGreen()
+      ],
+    );
   }
 
 
