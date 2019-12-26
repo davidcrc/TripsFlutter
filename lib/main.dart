@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:platzi_flutter_app/description_place.dart';
-import 'package:platzi_flutter_app/review_list.dart';
-import 'package:platzi_flutter_app/gradient_back.dart';
-import 'header_appbar.dart';
 
+import 'platzi_trips.dart';   // La barra de navegacion main
 // Para el reto 3
 import 'item_designer.dart';
 import 'item_list.dart';
@@ -34,7 +31,7 @@ class MyApp extends StatelessWidget {
       //home: MyHomePage(title: 'Flutter Demo Home Page'),
 
       // Note: Antes del reto 3
-      
+      /*
       home: Scaffold(
         /* Lo quitamos porq se hara uno personalizado
         appBar: AppBar(
@@ -46,20 +43,8 @@ class MyApp extends StatelessWidget {
         // body: new DescriptionPlace("Duwili Ella", 3 ,desciptionDummy),
 
         // NOTE: Colocamos un estack para colocar un objeto sobre otro
-        body: Stack(
-          children: <Widget>[
-            // NOTE: Exactamente como lo muestra ListView?: en columna siempre?
-            ListView(
-              children: <Widget>[
-                  DescriptionPlace("Bahamas", 4, desciptionDummy),
-                  ReviewList(),
-              ],
-            ),
-            //
-            //GradientBack("Popular"),
-            HeaderAppBar(),     // NOTE: Por que pone  aqui el appbar??
-          ],
-        ),
+        body:
+
         /*body: Center(
           child: Text("HOLUuu"),
         ),
@@ -87,7 +72,7 @@ class MyApp extends StatelessWidget {
         ),
       */
       )
-
+      */
 
       /// RETO 3 - home
       /*
@@ -107,6 +92,7 @@ class MyApp extends StatelessWidget {
       ),
       */
 
+      home: PlatziTrips(),
     );
   }
 }
