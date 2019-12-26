@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
       ),
       //home: MyHomePage(title: 'Flutter Demo Home Page'),
       home: Scaffold(
-        /*
+        /* Lo quitamos porq se hara uno personalizado
         appBar: AppBar(
           title: Text("HOLA MUDO"),
         ),
@@ -48,7 +48,7 @@ class MyApp extends StatelessWidget {
               ],
             ),
             //
-            GradientBack(),
+            GradientBack("Popular"),
           ],
         ),
         /*body: Center(

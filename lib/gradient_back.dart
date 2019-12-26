@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 
 class GradientBack extends StatelessWidget{
 
+  String title = "Popular";
+
+  GradientBack(this.title);
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -21,6 +25,18 @@ class GradientBack extends StatelessWidget{
           tileMode: TileMode.clamp    // primero rellena con un color
         ),
       ),
+      
+      //Colocar el apbar personalizado
+      child: Text(          // siempreel primer parametro
+        title,
+        style: TextStyle(
+          color: Colors.white,
+          fontSize: 30.0,
+          fontFamily: "Lato",
+          fontWeight: FontWeight.bold,
+        )
+      ),
+      alignment: Alignment(-0.9, -0.6),
     );
     //throw UnimplementedError();
   }
