@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'button_purple.dart';
 
 // Al crear la clase debe ser capital
 
@@ -114,9 +115,11 @@ class DescriptionPlace extends StatelessWidget{
     //throw UnimplementedError();
     //return title_stars;
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         title_stars,
-        description
+        description,
+        ButtonPurple("Navigatee"),
       ],
     );
   }
